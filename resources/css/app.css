@@ -1,0 +1,91 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+
+@font-face {
+    font-family: 'Trueno';
+    src: url('/fonts/Trueno-wml2.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal; 
+}
+
+
+@layer utilities {
+  .font-Trueno {
+    font-family: 'Trueno', sans-serif;
+  }
+}
+
+@font-face {
+    font-family: 'EatingPasta';
+    src: url('/fonts/EatingPasta-xRPER.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@layer utilities {
+    .font-EatingPasta {
+        font-family: 'EatingPasta', sans-serif;
+    }
+}
+
+@font-face {
+    font-family: 'OblataDisplay';
+    src: url('/fonts/OblataDisplayRegular-Zp8o8.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@layer utilities {
+    .font-OblataDisplay {
+        font-family: 'OblataDisplay', sans-serif;
+    }
+}
+
+@font-face {
+    font-family: 'Aliquam';
+    src: url('/fonts/Aliquam-nX00.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@layer utilities {
+    .font-Aliquam {
+        font-family: 'Aliquam', sans-serif;
+    }
+}
+
+@font-face {
+    font-family: 'Unifont';
+    src: url('/fonts/unifont-13.0.06.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@layer utilities {
+    .font-Unifont {
+        font-family: 'Unifont', sans-serif;
+    }
+}
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+/* @theme {
+    --font-corben: "Corben", serif;
+}
+
+@layer components {
+    .font-corben {
+        font-family: var(--font-corben);
+    } } */

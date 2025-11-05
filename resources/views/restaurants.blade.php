@@ -41,9 +41,10 @@
 
             if (idToShow === 'leftDiv') {
                 document.getElementById('toggleLeft').classList.add('bg-blue-500', 'text-white');
+                document.getElementById('toggleLeft').offsetHeight;
             } else {
                 document.getElementById('toggleRight').classList.add('bg-blue-500', 'text-white');
-
+                document.getElementById('toggleRight').offsetHeight;
                 // Invalidate map size to trigger proper rendering
                 setTimeout(() => {
                     if (map) map.invalidateSize();

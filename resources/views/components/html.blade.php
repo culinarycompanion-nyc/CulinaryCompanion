@@ -8,8 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Culinary Companion</title>
     @vite(['resources/css/app.css'])
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- @vite(['resources/js/app.js']) -->
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    @vite(['resources/js/app.js'])
 </head>
 
 <body class="h-full w-full">

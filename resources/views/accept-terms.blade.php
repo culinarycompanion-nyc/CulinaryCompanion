@@ -11,7 +11,7 @@
         </div>
 
         <!-- Accept Terms Form Section -->
-        <div class="w-full max-w-sm p-6 bg-white rounded-lg shadow-md">
+        <div class="w-full max-w-sm p-6 bg-white rounded-lg shadow-md mx-auto">
             <h2 class="text-2xl font-semibold text-center mb-6">Accept <a target="_blank" href="/"
                     class="hover:underline text-blue-500">Terms of Use</a></h2>
             <form method="POST" action="/accept-terms" class="space-y-4">

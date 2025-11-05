@@ -154,7 +154,7 @@ class AppController extends Controller
 
     public function redirect($encodedUrl)
     {
-        $url = urldecode($encodedUrl);
+        $url = base64_decode($encodedUrl);
 
 
         $restaurant = Restaurant::where('ubereats', $url)
@@ -184,7 +184,7 @@ class AppController extends Controller
             )->increment('visit_count');
 
 
-            return view('redirect', compact('url'));
+            return redirect($url);
         }
 
         return redirect('/');

@@ -344,22 +344,22 @@
                             @if ($restaurant->doordash)
                                 <span class="bg-gray-100 cursor-pointer hover:bg-gray-200 text-gray-700 px-2 py-1 rounded"><a
                                         target="_blank"
-                                        href="/redirect/{{ urlencode($restaurant->doordash) }}">DoorDash</a></span>
+                                        href="/redirect/{{ base64_encode($restaurant->doordash) }}">DoorDash</a></span>
                             @endif
                             @if ($restaurant->grubhub)
                                 <span class="bg-gray-100 cursor-pointer hover:bg-gray-200 text-gray-700 px-2 py-1 rounded"><a
                                         target="_blank"
-                                        href="/redirect/{{ urlencode($restaurant->grubhub) }}">Grubhub</a></span>
+                                        href="/redirect/{{ base64_encode($restaurant->grubhub) }}">Grubhub</a></span>
                             @endif
                             @if ($restaurant->ubereats)
                                 <span class="bg-gray-100 cursor-pointer hover:bg-gray-200 text-gray-700 px-2 py-1 rounded"><a
                                         target="_blank"
-                                        href="/redirect/{{ urlencode($restaurant->ubereats) }}">UberEats</a></span>
+                                        href="/redirect/{{ base64_encode($restaurant->ubereats) }}">UberEats</a></span>
                             @endif
                             @if ($restaurant->restaurant_order_link)
                                 <span class="bg-blue-100 cursor-pointer hover:bg-blue-200 text-blue-800 px-2 py-1 rounded"><a
                                         target="_blank"
-                                        href="/redirect/{{ urlencode($restaurant->restaurant_order_link) }}">Online
+                                        href="/redirect/{{ base64_encode($restaurant->restaurant_order_link) }}">Online
                                         Order</a></span>
                             @endif
                         </div>

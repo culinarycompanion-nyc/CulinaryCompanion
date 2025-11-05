@@ -40,9 +40,9 @@
             document.getElementById('toggleRight').classList.add('text-gray-800');
 
             if (idToShow === 'leftDiv') {
-                document.getElementById('toggleLeft').classList.add('text-green-700');
+                document.getElementById('toggleLeft').classList.add('underline', 'text-green-700');
             } else {
-                \                document.getElementById('toggleRight').classList.add('underline', 'text-green-700');
+                document.getElementById('toggleRight').classList.add('underline', 'text-green-700');
                 // Invalidate map size to trigger proper rendering
                 setTimeout(() => {
                     if (map) map.invalidateSize();

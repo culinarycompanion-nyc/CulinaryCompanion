@@ -33,14 +33,16 @@
             document.getElementById(idToShow).classList.remove('hidden');
 
             // Toggle button active state
+            document.getElementById('toggleLeft').classList.remove('underline', 'text-green-700');
+            document.getElementById('toggleRight').classList.remove('underline', 'text-green-700');
 
-            document.getElementById('toggleLeft').classList.add('bg-white');
-            document.getElementById('toggleRight').classList.add('bg-white');
+            document.getElementById('toggleLeft').classList.add('text-gray-800');
+            document.getElementById('toggleRight').classList.add('text-gray-800');
 
             if (idToShow === 'leftDiv') {
-                document.getElementById('toggleLeft').classList.add('bg-[#d0dbb9]');
+                document.getElementById('toggleLeft').classList.add('text-green-700');
             } else {
-                document.getElementById('toggleRight').classList.add('bg-[#d0dbb9]');
+                \                document.getElementById('toggleRight').classList.add('underline', 'text-green-700');
                 // Invalidate map size to trigger proper rendering
                 setTimeout(() => {
                     if (map) map.invalidateSize();
@@ -98,7 +100,7 @@
         <div class="lg:hidden flex justify-center mt-4">
             <div class="inline-flex bg-gray-300 rounded-full p-1">
                 <button id="toggleLeft" onclick="showDiv('leftDiv')"
-                    class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-[#d0dbb9] text-gray-800 transition mr-1">List</button>
+                    class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-white underline text-green-700 transition mr-1">List</button>
                 <button id="toggleRight" onclick="showDiv('rightDiv')"
                     class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-white text-gray-800 transition">Map</button>
             </div>
@@ -484,7 +486,7 @@
                 document.getElementById('rightDiv').classList.remove('hidden');
             } else {
                 // On small screens, show only the currently selected div
-                const leftVisible = document.getElementById('toggleLeft').classList.contains('bg-[#d0dbb9]');
+                const leftVisible = document.getElementById('toggleLeft').classList.contains('text-green-700');
                 showDiv(leftVisible ? 'leftDiv' : 'rightDiv');
             }
         }

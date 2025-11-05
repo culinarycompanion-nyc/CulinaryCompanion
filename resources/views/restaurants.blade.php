@@ -33,18 +33,14 @@
             document.getElementById(idToShow).classList.remove('hidden');
 
             // Toggle button active state
-            document.getElementById('toggleLeft').classList.remove('bg-blue-500', 'text-white');
-            document.getElementById('toggleRight').classList.remove('bg-blue-500', 'text-white');
 
-            document.getElementById('toggleLeft').classList.add('bg-white', 'text-gray-800');
-            document.getElementById('toggleRight').classList.add('bg-white', 'text-gray-800');
+            document.getElementById('toggleLeft').classList.add('bg-white');
+            document.getElementById('toggleRight').classList.add('bg-white');
 
             if (idToShow === 'leftDiv') {
-                document.getElementById('toggleLeft').classList.add('bg-blue-500');
-                document.getElementById('toggleLeft').classList.add('text-white');
+                document.getElementById('toggleLeft').classList.add('bg-[#d0dbb9]');
             } else {
-                document.getElementById('toggleRight').classList.add('bg-blue-500');
-                document.getElementById('toggleRight').classList.add('text-white');
+                document.getElementById('toggleRight').classList.add('bg-[#d0dbb9]');
                 // Invalidate map size to trigger proper rendering
                 setTimeout(() => {
                     if (map) map.invalidateSize();
@@ -102,7 +98,7 @@
         <div class="lg:hidden flex justify-center mt-4">
             <div class="inline-flex bg-gray-300 rounded-full p-1">
                 <button id="toggleLeft" onclick="showDiv('leftDiv')"
-                    class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-blue-500 text-white transition mr-1">List</button>
+                    class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-[#d0dbb9] text-gray-800 transition mr-1">List</button>
                 <button id="toggleRight" onclick="showDiv('rightDiv')"
                     class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-white text-gray-800 transition">Map</button>
             </div>
@@ -488,7 +484,7 @@
                 document.getElementById('rightDiv').classList.remove('hidden');
             } else {
                 // On small screens, show only the currently selected div
-                const leftVisible = document.getElementById('toggleLeft').classList.contains('bg-blue-500');
+                const leftVisible = document.getElementById('toggleLeft').classList.contains('bg-[#d0dbb9]');
                 showDiv(leftVisible ? 'leftDiv' : 'rightDiv');
             }
         }

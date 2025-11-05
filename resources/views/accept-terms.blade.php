@@ -4,7 +4,7 @@
         <!-- Logo and Message Section -->
         <div class="text-center mb-6 mt-8">
             <img src="{{ asset('assets/s_logo.png') }}" alt="Site Logo" class="mx-auto h-[20vh] w-auto mb-4">
-            <p class="text-lg sm:text-xs text-gray-800">
+            <p class="text-lg sm:text-xs text-gray-800 px-4">
                 *DISCLAIMER: Information from this site is meant to only be used as reference.
                 <br>Always make sure to notify the restaurant and your server about your food allergies.
             </p>

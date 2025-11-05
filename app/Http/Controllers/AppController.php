@@ -184,7 +184,7 @@ class AppController extends Controller
             )->increment('visit_count');
 
 
-            return redirect($url);
+            return view('redirect', compact('url'));
         }
 
         return redirect('/');

@@ -158,7 +158,7 @@
                         </svg>
                     </button>
                     <div id="filterMenu"
-                        class="hidden absolute top-12 left-0 z-30 w-[400px] bg-white border border-gray-300 rounded-lg shadow-lg p-4 transition-all duration-300 ease-in-out">
+                        class="hidden absolute top-12 left-0 z-40 w-[400px] bg-white border border-gray-300 rounded-lg shadow-lg p-4 transition-all duration-300 ease-in-out">
 
 
                         <form method="POST" action="/selections" class="overflow-y-auto ">
@@ -374,7 +374,7 @@
             <div id="rightDiv" class="bg-[#d0dbb9] p-2 rounded-xl shadow w-full h-full lg:w-[55%] hidden lg:block">
                 <!-- <h2 class="text-xl font-semibold mb-2">Map</h2>
                 <p>The Map will be here</p> -->
-                <div id="map" class="h-full w-full rounded z-10"></div>
+                <div id="map" class="h-full w-full rounded z-0"></div>
             </div>
         </div>
 

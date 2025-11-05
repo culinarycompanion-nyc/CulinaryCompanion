@@ -40,11 +40,11 @@
             document.getElementById('toggleRight').classList.add('bg-white', 'text-gray-800');
 
             if (idToShow === 'leftDiv') {
-                document.getElementById('toggleLeft').classList.add('bg-blue-500', 'text-white');
-                document.getElementById('toggleLeft').offsetHeight;
+                document.getElementById('toggleLeft').classList.add('bg-blue-500');
+                document.getElementById('toggleLeft').classList.add('text-white');
             } else {
-                document.getElementById('toggleRight').classList.add('bg-blue-500', 'text-white');
-                document.getElementById('toggleRight').offsetHeight;
+                document.getElementById('toggleRight').classList.add('bg-blue-500');
+                document.getElementById('toggleRight').classList.add('text-white');
                 // Invalidate map size to trigger proper rendering
                 setTimeout(() => {
                     if (map) map.invalidateSize();
@@ -102,9 +102,9 @@
         <div class="lg:hidden flex justify-center mt-4">
             <div class="inline-flex bg-gray-300 rounded-full p-1">
                 <button id="toggleLeft" onclick="showDiv('leftDiv')"
-                    class="px-4 py-1 rounded-full text-sm font-medium bg-blue-500 text-white transition mr-1">List</button>
+                    class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-blue-500 text-white transition mr-1">List</button>
                 <button id="toggleRight" onclick="showDiv('rightDiv')"
-                    class="px-4 py-1 rounded-full text-sm font-medium bg-white text-gray-800 transition">Map</button>
+                    class="cursor-pointer px-4 py-1 rounded-full text-sm font-medium bg-white text-gray-800 transition">Map</button>
             </div>
         </div>
 

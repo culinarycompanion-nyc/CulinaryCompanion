@@ -374,7 +374,7 @@
             <div id="rightDiv" class="bg-[#d0dbb9] p-2 rounded-xl shadow w-full h-full lg:w-[55%] hidden lg:block">
                 <!-- <h2 class="text-xl font-semibold mb-2">Map</h2>
                 <p>The Map will be here</p> -->
-                <div id="map" class="h-full w-full rounded"></div>
+                <div id="map" class="h-full w-full rounded z-10"></div>
             </div>
         </div>
 

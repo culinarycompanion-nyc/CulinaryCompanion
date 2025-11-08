@@ -84,7 +84,7 @@ class AppController extends Controller
             }
         })->when($selectedAreas !== [''], function ($query) use ($selectedAreas) {
             $query->whereIn('area', $selectedAreas);
-        })->get();
+        })->get()->shuffle();
 
 
         $areas = Restaurant::select('area')->where('area', '!=', '')->distinct()->orderBy('area', 'asc')->pluck('area');

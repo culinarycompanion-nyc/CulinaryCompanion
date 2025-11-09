@@ -4,7 +4,7 @@
         <div class="relative flex items-center justify-between">
             <div class="group relative mr-[25px]">
                 <div id="navMenuToggle"
-                    class="hover-trigger w-10 h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer">
+                    class="hover-trigger mt-[1vh] w-10 h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer">
                     <span class="w-6 h-[3px] bg-black"></span>
                     <span class="w-6 h-[3px] bg-black"></span>
                     <span class="w-6 h-[3px] bg-black"></span>

@@ -233,7 +233,7 @@
 
                     <div class="bg-white rounded-xl shadow-md p-5 hover:[transform:scale(1.04)] transition">
                         <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold underline text-[#2596be] hover:text-blue-600">
+                            <h2 class="text-lg font-bold underline text-[#4077a4] hover:text-[#2596be]">
                                 <a href="restaurant/{{ $restaurant->id }}">{{ $restaurant->name }}</a>
                             </h2>
                             @if (!empty(trim($restaurant->price_level)))

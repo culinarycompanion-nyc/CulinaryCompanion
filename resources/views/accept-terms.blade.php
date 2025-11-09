@@ -1,6 +1,6 @@
 <x-html>
 
-    <body class="bg-gray-100 flex flex-col items-center min-h-screen px-4">
+    <body class="bg-[#fcf9f1] flex flex-col items-center min-h-screen px-4">
         <!-- Logo and Message Section -->
         <div class="text-center mb-6 mt-8">
             <img src="{{ asset('assets/s_logo.png') }}" alt="Site Logo" class="mx-auto h-[20vh] w-auto mb-4">

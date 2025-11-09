@@ -233,15 +233,18 @@
 
                     <div class="bg-white rounded-xl shadow-md p-5 hover:[transform:scale(1.04)] transition">
                         <div class="flex justify-between items-start">
-                            <h2 class="text-lg font-bold underline text-[#4077a4] hover:text-[#2596be]">
-                                <a href="restaurant/{{ $restaurant->id }}">{{ $restaurant->name }}</a>
-                            </h2>
+                            <a href="restaurant/{{ $restaurant->id }}" class="flex-1">
+                                <h2 class="text-lg font-bold underline text-[#4077a4] hover:text-[#2596be]">
+                                    {{ $restaurant->name }}
+                                </h2>
+                            </a>
                             @if (!empty(trim($restaurant->price_level)))
                                 <span class="bg-green-100 text-green-700 px-2 py-1 rounded text-xs font-medium">
                                     {{ str_repeat('$', $restaurant->price_level) }}
                                 </span>
                             @endif
                         </div>
+
 
                         <p class="text-sm text-gray-600 mt-1">{{ $restaurant->address }}</p>
 

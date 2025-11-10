@@ -66,6 +66,6 @@ Route::get('/accept-terms', function () {
 });
 
 Route::post('/accept-terms', function (\Illuminate\Http\Request $request) {
-    $request->session()->put('terms_accepted', true);
-    return redirect('/');
+    // $request->session()->put('terms_accepted', true);
+    return redirect('/')->withCookie(cookie('terms_accepted', true, 14400));
 });

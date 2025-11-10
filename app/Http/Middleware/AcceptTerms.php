@@ -16,8 +16,10 @@ class AcceptTerms
     public function handle(Request $request, Closure $next): Response
     {
         // dd('bye');
+
+        $termsAccepted = $request->cookie('terms_accepted');
         if (
-            !$request->session()->has('terms_accepted') &&
+            !$termsAccepted &&
             !($request->route()->uri() === 'accept-terms') &&
             !($request->route()->uri() === 'password')
         ) {

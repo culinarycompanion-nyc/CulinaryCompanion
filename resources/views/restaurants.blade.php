@@ -80,11 +80,23 @@
             //         .bindPopup("You're here").openPopup();
             // });
 
-            var customIcon = L.icon({
-                iconUrl: '{{ asset("assets/marker.png") }}', // Required: URL to the icon image
-                iconSize: [24, 35], // Size of the icon in pixels (width, height)
-                iconAnchor: [12, 38], // Point of the icon that corresponds to the marker's location (x, y)
-                popupAnchor: [1, -34] // Point from which popups will open, relative to the iconAnchor
+            const markerHtmlStyles = `
+                background-image: url('{{ asset("assets/marker.png") }}');
+                background-size: cover;
+                width: 24px;
+                height: 35px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+                border-radius: 50% 50% 50% 0;
+                transform: rotate(-45deg);
+            `;
+
+            // 2. Create the L.divIcon, using the 'html' option to inject an element with the styles
+            var customIcon = L.divIcon({
+                className: '', // Set the default Leaflet class name to an empty string to avoid the default white square
+                html: `<div style="${markerHtmlStyles}"></div>`, // Inject a div with the inline styles
+                iconSize:,
+                iconAnchor:,
+                popupAnchor: [1, -34]
             });
 
 

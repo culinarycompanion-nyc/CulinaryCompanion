@@ -83,7 +83,7 @@
             var customIcon = L.icon({
                 iconUrl: '{{ asset("assets/marker.png") }}', // Required: URL to the icon image
                 iconSize: [24, 35], // Size of the icon in pixels (width, height)
-                iconAnchor: [12, 35], // Point of the icon that corresponds to the marker's location (x, y)
+                iconAnchor: [12, 38], // Point of the icon that corresponds to the marker's location (x, y)
                 popupAnchor: [1, -34] // Point from which popups will open, relative to the iconAnchor
             });
 

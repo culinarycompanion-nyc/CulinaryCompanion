@@ -80,6 +80,14 @@
             //         .bindPopup("You're here").openPopup();
             // });
 
+            var customIcon = L.icon({
+                iconUrl: '{{ asset("assets/marker.png") }}', // Required: URL to the icon image
+                iconSize: [24, 41], // Size of the icon in pixels (width, height)
+                iconAnchor: [12, 41], // Point of the icon that corresponds to the marker's location (x, y)
+                popupAnchor: [1, -34] // Point from which popups will open, relative to the iconAnchor
+            });
+
+
             restaurants.forEach(r => {
                 if (r.latitude && r.longitude) {
                     const popupContent = `
@@ -87,7 +95,7 @@
                     ${r.address}<br>
                     <span style="color: #666;">${r.cuisine ?? ''}</span>
                 `;
-                    L.marker([r.latitude, r.longitude]).addTo(map).bindPopup(popupContent);
+                    L.marker([r.latitude, r.longitude], { icon: customIcon }).addTo(map).bindPopup(popupContent);
                 }
             });
         });

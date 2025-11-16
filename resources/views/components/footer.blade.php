@@ -6,7 +6,8 @@
 <footer
     class="h-[5vh] lg:h-[6vh] w-full bg-gray-700 text-gray-200 text-sm px-6 flex justify-between items-center md:px-8">
     <div class="space-x-2 md:space-x-4 text-[0.55rem] md:text-sm">
-        <a target="_blank" href="/" class="hover:underline">Privacy Policy</a>
+        <a target="_blank" href="https://drive.google.com/file/d/1kS7s4x915CFwAtmiC4ksoCdVuc_byLVd/view?usp=sharing"
+            class="hover:underline">Privacy Policy</a>
         <a target="_blank" href="https://drive.google.com/file/d/1j4a4rznwg3PY-MitEq8gDdyMm1GEb-Al/view?usp=sharing"
             class="hover:underline">Terms of Use</a>
     </div>

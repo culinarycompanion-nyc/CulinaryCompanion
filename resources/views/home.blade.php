@@ -3,10 +3,10 @@
 
     <div name="home-page">
         <!-- #f5eee0 -->
-        <nav id="home-page-photo-div"
-            class="relative bg-[#f5eee0] h-screen w-full drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] items-center">
+        <nav id="home-page-photo-div" class="relative bg-[#f5eee0] h-screen w-full items-center">
             <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full h-full object-cover">
-            <div id="title-name" class="text-center absolute inset-0 h-[10vh] flex items-center justify-center">
+            <div id="title-name"
+                class="text-center absolute inset-0 h-[10vh] flex items-center justify-center bg-[#f5eee0] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
                 <div class="relative flex items-center justify-between">
                     <div class="group relative mr-[25px]">
                         <div id="navMenuToggle"

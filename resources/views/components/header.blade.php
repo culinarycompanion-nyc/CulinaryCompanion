@@ -3,17 +3,17 @@
     <div id="title-name" class="text-center absolute inset-0 h-[10vh] flex items-center justify-center">
         <div class="relative flex items-center justify-between">
             <!-- Menu Toggle -->
-            <div class="relative mr-[25px]">
+            <div class="relative mr-[25px] group">
                 <div id="navMenuToggle"
-                    class="mt-[2vh] w-10 h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer">
+                    class="mt-[2vh] w-10 h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer md:hidden">
                     <span class="w-6 h-[3px] bg-black"></span>
                     <span class="w-6 h-[3px] bg-black"></span>
                     <span class="w-6 h-[3px] bg-black"></span>
                 </div>
 
                 <!-- Dropdown Menu -->
-                <div id="navMenu"
-                    class="absolute hidden z-50 top-full left-0 w-32 bg-white border border-gray-300 rounded-md shadow transition-all duration-200 md:group-hover:block">
+                <div id="navMenu" class="absolute hidden z-50 top-full left-0 w-32 bg-white border border-gray-300 rounded-md shadow transition-all duration-200 
+                           md:group-hover:block">
                     <a class="flex block px-4 py-2 text-black hover:bg-gray-100" href="/">
                         Home
                     </a>
@@ -40,11 +40,17 @@
 
 <!-- JavaScript for Mobile Toggle -->
 <script>
-    document.getElementById("navMenuToggle").addEventListener("click", function () {
-        const menu = document.getElementById("navMenu");
-        menu.classList.toggle("hidden");
+    const toggle = document.getElementById("navMenuToggle");
+    const menu = document.getElementById("navMenu");
+
+    toggle.addEventListener("click", function () {
+        // Only apply toggle on small screens
+        if (window.innerWidth < 768) {
+            menu.classList.toggle("hidden");
+        }
     });
 </script>
+
 
 
 

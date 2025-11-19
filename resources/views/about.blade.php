@@ -56,7 +56,7 @@
             <!-- Companion 2 -->
             <div class="flex flex-col sm:flex-row items-center sm:items-center bg-white shadow-md rounded-lg p-6">
                 <div class="sm:w-1/4 flex justify-center items-center mb-4 sm:mb-0">
-                    <img src="{{ asset('asset/table.jpg') }}" alt="Photo of Tarang"
+                    <img src="{{ asset('assets/tarang.jpg') }}" alt="Photo of Tarang"
                         class="w-40 h-40 rounded-full object-cover">
                 </div>
                 <div class="sm:w-3/4 sm:pl-6 text-center sm:text-left">

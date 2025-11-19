@@ -10,13 +10,13 @@
                 <div class="relative flex items-center justify-between">
                     <div class="group relative mr-[25px]">
                         <div
-                            class="sm:hover-trigger w-10 mt-[2vh] h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer">
+                            class="w-10 mt-[2vh] h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer">
                             <span class="w-6 h-[3px] bg-black"></span>
                             <span class="w-6 h-[3px] bg-black"></span>
                             <span class="w-6 h-[3px] bg-black"></span>
                         </div>
                         <div
-                            class="absolute sm:group-hover:block top-full left-0 w-32 bg-white border border-gray-300 rounded-md shadow opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
+                            class="absolute sm:group-hover:block top-full left-0 w-32 bg-white border border-gray-300 rounded-md shadow opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-200">
                             <a class="flex block px-4 py-2 text-black hover:bg-gray-100" href="/">
                                 Home
                             </a>
@@ -42,10 +42,7 @@
             const menu = document.getElementById("navMenu");
 
             toggle.addEventListener("click", function () {
-                // Only apply toggle on small screens
-                if (window.innerWidth < 768) {
-                    menu.classList.toggle("hidden");
-                }
+                menu.classList.toggle("hidden");
             });
         </script>
         <div class="h-[82vh] pt-[12vh] bg-[#fcf9f1]">

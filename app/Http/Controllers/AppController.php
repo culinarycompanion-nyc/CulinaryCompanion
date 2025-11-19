@@ -62,7 +62,7 @@ class AppController extends Controller
         if (session()->has('selectedAreas') && !empty(session('selectedAreas'))) {
             $selectedAreas = session('selectedAreas');
             session()->forget('selectedAreas');
-            // dd($selectedAreas);
+            // dd($selectedAreas); 
         }
 
 

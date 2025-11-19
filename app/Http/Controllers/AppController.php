@@ -88,7 +88,7 @@ class AppController extends Controller
 
 
         $areas = Restaurant::select('area')->where('area', '!=', '')->distinct()->orderBy('area', 'asc')->pluck('area');
-        $cuisines = Restaurant::select('area')->where('area', '!=', '')->distinct()->orderBy('area', 'asc')->pluck('area');
+        $cuisines = Restaurant::select('cuisine')->where('cuisine', '!=', '')->distinct()->orderBy('cuisine', 'asc')->pluck('cuisine');
 
         // dd($areas);
 

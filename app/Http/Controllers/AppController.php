@@ -88,12 +88,13 @@ class AppController extends Controller
 
 
         $areas = Restaurant::select('area')->where('area', '!=', '')->distinct()->orderBy('area', 'asc')->pluck('area');
+        $cuisines = Restaurant::select('area')->where('area', '!=', '')->distinct()->orderBy('area', 'asc')->pluck('area');
 
         // dd($areas);
 
         // dd(compact('selectedOptions', 'restaurants'));
 
-        return view('restaurants', compact('selectedOptions', 'restaurants', 'userAllergens', 'userDietaryPreferences', 'areas', 'selectedAreas'));
+        return view('restaurants', compact('selectedOptions', 'restaurants', 'userAllergens', 'userDietaryPreferences', 'areas', 'cuisines', 'selectedAreas'));
     }
 
 

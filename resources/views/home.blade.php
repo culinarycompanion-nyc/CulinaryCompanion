@@ -7,8 +7,8 @@
             <div id="title-name"
                 class="text-center absolute inset-0 h-[10vh] w-full flex items-center justify-center bg-[#f5eee0] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
             </div>
-            <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full h-full object-cover">
-            <div id="title-name" class="text-center absolute inset-0 h-[10vh] flex items-center justify-center">
+            <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full z-10 h-full object-cover">
+            <div id="title-name" class="text-center absolute inset-0 h-[10vh] flex items-center z-30 justify-center">
                 <div class="relative flex items-center justify-between">
                     <div class="group relative mr-[25px]">
                         <div id="navMenuToggle"

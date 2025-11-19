@@ -53,7 +53,7 @@
                 Select your Allergies & Dietary Requirements
             </div>
             <br>
-            <div class="flex justify-center">
+            <div class="flex justify-center z-10">
                 <form class="relative" method="post" action="/selections">
                     @csrf
                     <div class="grid grid-cols-6 md:grid-cols-10 justify-center gap-4">

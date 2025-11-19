@@ -4,9 +4,11 @@
     <div name="home-page">
         <!-- #f5eee0 -->
         <nav id="home-page-photo-div" class="relative bg-[#f5eee0] h-screen w-full items-center">
-            <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full h-full object-cover">
             <div id="title-name"
-                class="text-center absolute inset-0 h-[10vh] flex items-center justify-center bg-[#f5eee0] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+                class="text-center absolute inset-0 h-[10vh] w-full flex items-center justify-center bg-[#f5eee0] drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
+            </div>
+            <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full h-full object-cover">
+            <div id="title-name" class="text-center absolute inset-0 h-[10vh] flex items-center justify-center">
                 <div class="relative flex items-center justify-between">
                     <div class="group relative mr-[25px]">
                         <div id="navMenuToggle"
@@ -16,17 +18,17 @@
                             <span class="w-6 h-[3px] bg-black"></span>
                         </div>
                         <div id="navMenu"
-                            class="absolute sm:group-hover:block top-full left-0 w-32 bg-white border border-gray-300 rounded-md shadow opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
-                            <a class="flex block px-4 py-2 text-black hover:bg-gray-100" href="/">
+                            class="absolute sm:group-hover:block top-full left-0 z-50 w-32 bg-white border border-gray-300 rounded-md shadow opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
+                            <a class="flex z-50 block px-4 py-2 text-black hover:bg-gray-100" href="/">
                                 Home
                             </a>
                             <a class="flex z-50 block px-4 py-2 text-black hover:bg-gray-100" href="/blogs">
                                 Blogs
                             </a>
-                            <a class="flex block px-4 py-2 text-black hover:bg-gray-100" href="/about">
+                            <a class="flex z-50 block px-4 py-2 text-black hover:bg-gray-100" href="/about">
                                 About Us
                             </a>
-                            <a class="flex block px-4 py-2 text-black hover:bg-gray-100" href="/contact">
+                            <a class="flex z-50 block px-4 py-2 text-black hover:bg-gray-100" href="/contact">
                                 Contact Us
                             </a>
                         </div>

@@ -7,9 +7,9 @@
             <!-- <div
                 class="text-center absolute inset-0 h-[10vh] w-full flex items-center justify-center bg-[#f5eee0] z-10 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
             </div> -->
-            <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full z-20 h-full object-cover">
+            <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full h-full object-cover">
             <div id="title-name"
-                class="text-center absolute inset-0 h-[10vh] flex items-center z-30 justify-center before:content-[''] before:absolute before:inset-0 before:bg-[#f5eee0] before:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] before:z-[-1]">
+                class="text-center absolute inset-0 h-[10vh] flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:bg-[#f5eee0] before:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] before:z-[-1]">
                 <div class="relative flex items-center justify-between">
                     <div class="group relative mr-[25px]">
                         <div id="navMenuToggle"

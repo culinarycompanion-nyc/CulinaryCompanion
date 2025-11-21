@@ -51,7 +51,7 @@
                 }
             });
         </script>
-        <div class="h-[82vh] pt-[12vh] bg-[#fcf9f1]">
+        <div class="h-[82vh] pt-[12vh] bg-[#fcf9f1] before:z-[-2]">
             <div class="text-center mb-[4vh] text-[clamp(1.4rem,2vw,2rem)] leading-[clamp(1.5rem,2.5vw,2rem)] pb-2">
                 Select your Allergies & Dietary Requirements
             </div>

@@ -3,7 +3,7 @@
 
     <div name="home-page">
         <!-- #f5eee0 -->
-        <nav id="home-page-photo-div" class="relative bg-[#f5eee0] h-screen w-full items-center">
+        <nav id="home-page-photo-div" class="relative h-screen w-full items-center">
             <!-- <div
                 class="text-center absolute inset-0 h-[10vh] w-full flex items-center justify-center bg-[#f5eee0] z-10 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
             </div> -->
@@ -51,12 +51,12 @@
                 }
             });
         </script>
-        <div class="h-[82vh] pt-[12vh] bg-[#fcf9f1] -z-10">
+        <div class="h-[82vh] pt-[12vh] bg-[#fcf9f1]">
             <div class="text-center mb-[4vh] text-[clamp(1.4rem,2vw,2rem)] leading-[clamp(1.5rem,2.5vw,2rem)] pb-2">
                 Select your Allergies & Dietary Requirements
             </div>
             <br>
-            <div class="flex justify-center z-0">
+            <div class="flex justify-center z-10">
                 <form class="relative" method="post" action="/selections">
                     @csrf
                     <div class="grid grid-cols-6 md:grid-cols-10 justify-center gap-4">

@@ -3,17 +3,17 @@
 
     <div name="home-page">
         <!-- #f5eee0 -->
-        <nav id="home-page-photo-div" class="relative h-screen w-full items-center">
+        <nav id="home-page-photo-div" class="relative h-screen w-full items-center z-20">
             <!-- <div
                 class="text-center absolute inset-0 h-[10vh] w-full flex items-center justify-center bg-[#f5eee0] z-10 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]">
             </div> -->
             <img id="home-page-bg-img" src="{{ asset("assets/table.jpg") }}" class="w-full h-full object-cover">
             <div id="title-name"
-                class="text-center absolute inset-0 h-[10vh] flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:bg-[#f5eee0] before:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] before:z-[-1]">
-                <div class="relative flex items-center justify-between">
-                    <div class="group relative mr-[25px]">
+                class="text-center z-20 absolute inset-0 h-[10vh] flex items-center justify-center before:content-[''] before:absolute before:inset-0 before:bg-[#f5eee0] before:drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)] before:z-[-1]">
+                <div class="relative flex items-center justify-between z-20">
+                    <div class="group relative mr-[25px] z-20">
                         <div id="navMenuToggle"
-                            class="sm:hover-trigger w-10 mt-[2vh] h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer">
+                            class="sm:hover-trigger z-20 w-10 mt-[2vh] h-10 border-[3px] rounded-md [box-shadow:-4px_4px_6px_rgba(182,199,207,0.75)] border-black flex flex-col justify-center items-center gap-[4px] cursor-pointer">
                             <span class="w-6 h-[3px] bg-black"></span>
                             <span class="w-6 h-[3px] bg-black"></span>
                             <span class="w-6 h-[3px] bg-black"></span>
@@ -34,7 +34,7 @@
                             </a>
                         </div>
                     </div>
-                    <a class="text-black text-[clamp(2rem,5vw,4rem)] font-serif font-medium [text-shadow:_-4px_4px_6px_rgba(182,199,207,0.75)]"
+                    <a class="text-black z-20 text-[clamp(2rem,5vw,4rem)] font-serif font-medium [text-shadow:_-4px_4px_6px_rgba(182,199,207,0.75)]"
                         href="/"><img src="{{ asset("assets/header_logo.png") }}" alt="Site Logo" class="h-[8vh]"></a>
                     <!-- #4a3f35 -->
                 </div>

@@ -492,6 +492,60 @@
     </script>
 
 
+    <script>
+        const selectedValues2 = @json($selectedCuisines);
+        const select2 = document.getElementById('multi-select2');
+        const tagContainer2 = document.getElementById('selected-tags2');
+        const hiddenInputs2 = document.getElementById('hidden-inputs2');
+
+        function createTag2(value) {
+            // Create tag UI
+            const tag2 = document.createElement('span');
+            tag.className = 'bg-green-100 text-green-800 px-2 py-1 rounded-full text-sm flex items-center';
+            tag.innerHTML = `${value} <button class="ml-1 text-blue-500 hover:text-blue-700" onclick="removeTag2('${value.replace(/'/g, "\\'")}')">&times;</button>`;
+            tagContainer2.appendChild(tag2);
+
+            // Create hidden input
+            const input2 = document.createElement('input');
+            input2.type = 'hidden';
+            input2.name = 'cuisines[]';
+            input2.value = value;
+            input2.dataset.tag = value;
+            hiddenInputs2.appendChild(input2);
+        }
+
+        function removeTag2(value) {
+            // Remove tag UI
+            [...tagContainer2.children].forEach(tag => {
+                if (tag.textContent.includes(value)) tag.remove();
+            });
+
+            // Remove hidden input
+            [...hiddenInputs2.children].forEach(input => {
+                if (input.dataset.tag === value) input.remove();
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            selectedValues
+                .filter(value => value.trim() !== '')
+                .forEach(value => {
+                    const exists = [...hiddenInputs2.children].some(input => input.value === value);
+                    if (!exists) createTag2(value);
+                });
+        });
+
+        select.addEventListener('change', () => {
+            const value = select.value;
+            const exists = [...hiddenInputs2.children].some(input => input.value === value);
+            if (!exists && value.trim() !== '') createTag2(value);
+
+            // Reset dropdown
+            select.selectedIndex = 0;
+        });
+    </script>
+
+
 
 
 

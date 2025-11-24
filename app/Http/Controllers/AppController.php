@@ -48,6 +48,16 @@ class AppController extends Controller
                 // dd($selectedAreas);
                 session(['selectedAreas' => $selectedAreas]);
             }
+            if (request()->filled('cuisines')) {
+                $validated = request()->validate([
+                    'areas' => 'array',
+                    'cuisines.*' => 'string',
+                ]);
+
+                $selectedCuisines = request('cuisines') ?? [''];
+                // dd($selectedAreas);
+                session(['selectedCuisines' => $selectedCuisines]);
+            }
             return redirect('/restaurants');
         }
     }
@@ -63,6 +73,14 @@ class AppController extends Controller
             $selectedAreas = session('selectedAreas');
             session()->forget('selectedAreas');
             // dd($selectedAreas); 
+        }
+
+        $selectedCuisines = [''];
+
+        if (session()->has('selectedCuisines') && !empty(session('selectedCuisines'))) {
+            $selectedCuisines = session('selectedCuisines');
+            session()->forget('selectedCuisines');
+            // dd($selectedCuisines); 
         }
 
 
@@ -84,6 +102,8 @@ class AppController extends Controller
             }
         })->when($selectedAreas !== [''], function ($query) use ($selectedAreas) {
             $query->whereIn('area', $selectedAreas);
+        })->when($selectedCuisines !== [''], function ($query) use ($selectedCuisines) {
+            $query->whereIn('cuisine', $selectedCuisines);
         })->get()->shuffle();
 
 

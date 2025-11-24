@@ -193,7 +193,7 @@
                             </div>
                             <hr class="my-2">
                             <div>
-                                <h2 class="text-lg font-semibold mb-3">Filter By Region</h2>
+                                <h2 class="text-lg font-semibold mb-2">Filter By Region</h2>
                                 <div id="hidden-inputs"></div>
                                 <div id="selected-tags" class="flex flex-wrap gap-2 mb-2"></div>
 
@@ -203,6 +203,22 @@
                                     <option value="" disabled selected>Choose Region</option>
                                     @foreach ($areas as $area)
                                         <option value="{{ $area }}">{{ $area }}</option>
+                                    @endforeach
+
+                                </select>
+                            </div>
+                            <hr class="my-2">
+                            <div>
+                                <h2 class="text-lg font-semibold mb-2">Filter By Cuisine</h2>
+                                <div id="hidden-inputs2"></div>
+                                <div id="selected-tags2" class="flex flex-wrap gap-2 mb-2"></div>
+
+                                <!-- Multi-select dropdown -->
+                                <select id="multi-select2"
+                                    class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white shadow-sm focus:ring-2 focus:ring-blue-500 focus:outline-none">
+                                    <option value="" disabled selected>Choose Cuisine</option>
+                                    @foreach ($cuisines as $cuisine)
+                                        <option value="{{ $cuisine }}">{{ $cuisine }}</option>
                                     @endforeach
 
                                 </select>
